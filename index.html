@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Music Player – Hilfe und Kontakt</title>
+<style>
+/* Gemeinsames Aussehen der beiden Seiten.
+   Ohne geladene Schriften und ohne Bibliotheken: Diese Seiten müssen überall
+   funktionieren, auch offline und in jedem Prüf-Browser bei Apple. */
+:root {
+  --ink: #1c1c1e;
+  --muted: #6c6c70;
+  --page: #ffffff;
+  --rule: rgba(0, 0, 0, 0.12);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ink: #f2f2f7;
+    --muted: #9b9ba0;
+    --page: #000000;
+    --rule: rgba(255, 255, 255, 0.16);
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 48px 20px 96px;
+  background: var(--page);
+  color: var(--ink);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 42rem; margin: 0 auto; }
+h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .25em; letter-spacing: -0.02em; }
+/* „Datenschutzerklärung" ist zwanzig Zeichen lang und passt auf einem schmalen
+   iPhone nicht in eine Zeile. Trennen statt über den Rand laufen lassen – und
+   auf kleinen Geräten eine Stufe kleiner. */
+h1, h2, h3 { overflow-wrap: break-word; hyphens: auto; }
+@media (max-width: 26rem) {
+  body { padding: 32px 16px 72px; }
+  h1 { font-size: 1.55rem; }
+}
+h2 { font-size: 1.25rem; margin: 2.5em 0 .5em; letter-spacing: -0.01em; }
+h3 { font-size: 1rem; margin: 1.75em 0 .4em; }
+p, li { margin: 0 0 .9em; }
+ul { padding-left: 1.2em; }
+a { color: inherit; text-decoration-color: var(--muted); text-underline-offset: 3px; }
+.lead { color: var(--muted); margin-bottom: 2.5em; }
+.rule { border: 0; border-top: 1px solid var(--rule); margin: 4em 0 3em; }
+.note {
+  border-left: 3px solid var(--rule);
+  padding: .1em 0 .1em 1em;
+  color: var(--muted);
+}
+footer { color: var(--muted); font-size: .9rem; margin-top: 4em; }
+[lang="en"] h1 { font-size: 1.6rem; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Music Player</h1>
+<p class="lead">Ein Musikplayer für deine eigenen Dateien. Hilfe und Kontakt.</p>
+
+<p>Music Player spielt Musik, die auf deinem iPhone liegt – ohne Abo, ohne Konto
+und ohne Internet. Du bringst deine eigenen Dateien mit, die App macht eine
+Bibliothek daraus.</p>
+
+<h2>Musik hinzufügen</h2>
+<p>Es gibt zwei Wege, und beide führen zum selben Ergebnis:</p>
+<ul>
+  <li><strong>In der App:</strong> Tippe unter „Songs“ oben rechts auf das
+      Pluszeichen und wähle deine Dateien aus – aus iCloud Drive, von diesem
+      iPhone oder von einem angeschlossenen Speicher.</li>
+  <li><strong>Von aussen:</strong> Teile eine Audiodatei aus einer anderen App
+      mit Music Player – aus der Dateien-App, per AirDrop vom Mac, aus einer
+      Mail. Die App erscheint dafür im Teilen-Menü.</li>
+</ul>
+<p>Über der Liste siehst du, wie weit der Import ist, und danach, wie viele Songs
+dazugekommen sind. Ist ein Song schon vorhanden, sagt die App es und legt ihn
+kein zweites Mal an.</p>
+
+<h2>Häufige Fragen</h2>
+
+<h3>Welche Formate gehen?</h3>
+<p>Alles, was iOS selbst abspielen kann – vor allem MP3, M4A/AAC, WAV und AIFF.
+Formate, die das System nicht kennt (etwa OGG oder FLAC in manchen Varianten),
+gehen nicht.</p>
+
+<h3>Wo liegen meine Dateien?</h3>
+<p>Beim Import legt die App eine Kopie in ihrem eigenen Bereich auf dem iPhone
+ab. Deine Ausgangsdatei bleibt unverändert dort, wo sie war. Die Kopien sind in
+der Dateien-App bewusst nicht sichtbar, damit dort niemand versehentlich etwas
+löscht, das die Bibliothek noch braucht.</p>
+
+<h3>Brauche ich Internet?</h3>
+<p><strong>Nie.</strong> Die App geht überhaupt nicht ins Netz – nicht zum
+Abspielen, nicht zum Importieren, nicht für Cover. Im Flugmodus funktioniert
+sie genauso wie sonst.</p>
+
+<h3>Meine Songs haben keine Cover.</h3>
+<p>Das Cover kommt aus der Datei selbst. Viele MP3s tragen eines eingebettet
+mit, manche aber nicht – dann bleibt der Song ohne Bild. Die App sucht bewusst
+nirgends danach.</p>
+<p>Du kannst jederzeit eines von Hand setzen: Halte den Song gedrückt, wähle
+„Bearbeiten“ und tippe auf den Kamera-Knopf auf dem Cover. Beim Zuschneiden
+bestimmst du selbst, welcher Ausschnitt es wird.</p>
+
+<h3>Was ist „Smooth Space"?</h3>
+<p>Ein Beispielsong, der mit der App mitkommt, damit du sie sofort ausprobieren
+kannst. Du bekommst ihn nur, wenn du ihn im Rundgang selbst holst – automatisch
+passiert nichts. Löschen kannst du ihn wie jeden anderen Song; Titel und
+Interpret lassen sich bei ihm allerdings nicht ändern.</p>
+<p>Das Stück ist „Smooth Space" von MrMusic44 – selbst komponiert, mit Logic Pro
+und den Klängen, die dort mitgeliefert werden. Das Bild dazu ist mit einem
+KI-Werkzeug entstanden.</p>
+
+<h3>Ein Song hat ein falsches Cover.</h3>
+<p>Dann steht es so in der Datei. Halte den Song gedrückt, wähle „Bearbeiten“
+und setze über den Kamera-Knopf ein eigenes Bild – oder nimm das vorhandene
+über das rote Kreuz weg.</p>
+
+<h3>Ich habe einen Song gelöscht. Ist er weg?</h3>
+<p>Nicht sofort. Gelöschte Songs und Playlists liegen <strong>30 Tage im
+Papierkorb</strong> (Einstellungen → Papierkorb) und lassen sich von dort
+zurückholen. Erst danach – oder wenn du sie dort endgültig löschst – verschwindet
+auch die Datei.</p>
+
+<h3>Wie wähle ich schnell viele Songs aus?</h3>
+<p>Tippe auf „Auswählen“ und streiche mit dem Finger über die Kreise links neben
+den Covern. Am oberen oder unteren Rand wandert die Liste dabei von selbst
+weiter.</p>
+
+<h3>Warum sind alle Songs gleich laut?</h3>
+<p>Die App misst jeden Song einmal aus und gleicht die Lautstärke an, damit beim
+Wechsel nichts springt. Abschalten lässt sich das in den Einstellungen unter
+„Lautstärke-Normalisierung“.</p>
+
+<h3>Kann ich die Einführung noch einmal ansehen?</h3>
+<p>Ja: Einstellungen → Hilfe → „Kurzer Überblick“.</p>
+
+<h3>Geht die App auf dem iPad oder auf dem Mac?</h3>
+<p>Diese Fassung ist für das iPhone gemacht. Auf dem iPad läuft sie im
+iPhone-Format.</p>
+
+<h3>Werden meine Songs gesichert oder synchronisiert?</h3>
+<p>Nein. Die Bibliothek liegt allein auf diesem iPhone. Löschst du die App, ist
+sie weg. Eine Synchronisierung über iCloud gibt es noch nicht.</p>
+
+<h2>Etwas funktioniert nicht?</h2>
+<p>Schreib mir. Hilfreich sind dabei: welches iPhone, welche iOS-Version, was du
+getan hast und was passiert ist.</p>
+<p><a href="mailto:futureown.info@gmail.com">futureown.info@gmail.com</a></p>
+
+<hr class="rule">
+
+<div lang="en">
+<h1>Music Player – Help &amp; Contact</h1>
+<p class="lead">A music player for your own files.</p>
+
+<p>Music Player plays music stored on your iPhone – no subscription, no account,
+no internet. You bring your own files; the app turns them into a library.</p>
+
+<h3>Adding music</h3>
+<ul>
+  <li><strong>In the app:</strong> under “Songs”, tap the plus at the top right
+      and pick your files.</li>
+  <li><strong>From elsewhere:</strong> share an audio file with Music Player from
+      another app – the Files app, AirDrop from a Mac, an email.</li>
+</ul>
+<p>A bar above the list shows how far the import has got, and afterwards how many
+songs were added. Songs you already have are not added twice.</p>
+
+<h3>Which formats work?</h3>
+<p>Anything iOS itself can play – mainly MP3, M4A/AAC, WAV and AIFF.</p>
+
+<h3>Where are my files?</h3>
+<p>The app keeps a copy in its own area on the iPhone; your original file stays
+where it was. The copies are deliberately not visible in the Files app so nothing
+the library still needs gets deleted by accident.</p>
+
+<h3>Do I need internet?</h3>
+<p><strong>Never.</strong> The app makes no network connections at all – not to
+play, not to import, not for artwork. It behaves exactly the same in airplane
+mode.</p>
+
+<h3>My songs have no artwork.</h3>
+<p>Artwork comes from the file itself. Many MP3s carry one embedded; some do
+not, and then the song stays without a picture. To set one by hand, press and
+hold the song, choose “Edit” and tap the camera button on the artwork.</p>
+
+<h3>I deleted a song. Is it gone?</h3>
+<p>Not straight away. Deleted songs and playlists stay in the trash for
+<strong>30 days</strong> (Settings → Trash) and can be restored from there.</p>
+
+<h3>How do I select many songs quickly?</h3>
+<p>Tap “Select” and drag your finger down the circles to the left of the artwork.
+Near the top or bottom edge the list keeps scrolling by itself.</p>
+
+<h3>Is my library backed up or synced?</h3>
+<p>No. It lives on this iPhone only. Deleting the app removes it. iCloud sync
+does not exist yet.</p>
+
+<h3>Something is not working</h3>
+<p>Write to me, and please include your iPhone model, your iOS version, what you
+did and what happened.</p>
+<p><a href="mailto:futureown.info@gmail.com">futureown.info@gmail.com</a></p>
+</div>
+
+<footer>
+  <p><a href="datenschutz.html">Datenschutzerklärung / Privacy Policy</a></p>
+</footer>
+
+</main>
+</body>
+</html>
